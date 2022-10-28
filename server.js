@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 let noteContent = require('./db/db.json')
 //add or horoku stuff
-const PORT = 5000 || process.env.port || 3001
+const PORT = process.env.PORT || 3001
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
